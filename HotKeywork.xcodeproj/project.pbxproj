@@ -337,7 +337,6 @@
 			isa = PBXGroup;
 			children = (
 				E6016FCE222A53390070461B /* Helpers */,
-				E6016FCB222A52170070461B /* DataManager */,
 				E6016FBC222A43280070461B /* Protocol */,
 				E6016FBB222A431E0070461B /* Entity */,
 				E6016FBA222A43170070461B /* Router */,
@@ -397,13 +396,6 @@
 				E6016FC1222A4B630070461B /* TrendingProtocol.swift */,
 			);
 			path = Protocol;
-			sourceTree = "<group>";
-		};
-		E6016FCB222A52170070461B /* DataManager */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = DataManager;
 			sourceTree = "<group>";
 		};
 		E6016FCE222A53390070461B /* Helpers */ = {
