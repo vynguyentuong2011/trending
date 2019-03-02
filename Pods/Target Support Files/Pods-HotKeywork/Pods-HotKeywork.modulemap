@@ -1,0 +1,6 @@
+framework module Pods_HotKeywork {
+  umbrella header "Pods-HotKeywork-umbrella.h"
+
+  export *
+  module * { export * }
+}

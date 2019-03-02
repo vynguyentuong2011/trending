@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="HotKeywordCollectionViewCell" id="iN0-l3-epB" customClass="HotKeywordCollectionViewCell" customModule="HotKeywork" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Tdt-wC-2l6">
+                    <rect key="frame" x="27" y="10" width="96" height="96"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="96" id="IH1-Ar-Cdx"/>
+                        <constraint firstAttribute="height" constant="96" id="Jpy-YL-ZMI"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jl0-9E-31j">
+                    <rect key="frame" x="19" y="111" width="112" height="34"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LabelLabelLabelLabelLabelLabelLabel" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XVX-iD-9Og">
+                            <rect key="frame" x="16" y="0.5" width="80" height="33"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="XVX-iD-9Og" firstAttribute="centerX" secondItem="jl0-9E-31j" secondAttribute="centerX" id="PYh-TZ-Sy1"/>
+                        <constraint firstAttribute="width" constant="112" id="R0b-Gb-azU"/>
+                        <constraint firstAttribute="trailing" secondItem="XVX-iD-9Og" secondAttribute="trailing" constant="16" id="S4e-GF-0rd"/>
+                        <constraint firstItem="XVX-iD-9Og" firstAttribute="leading" secondItem="jl0-9E-31j" secondAttribute="leading" constant="16" id="YAb-bv-noi"/>
+                        <constraint firstItem="XVX-iD-9Og" firstAttribute="centerY" secondItem="jl0-9E-31j" secondAttribute="centerY" id="Yhu-RS-jrx"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="jl0-9E-31j" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="6R9-AW-QTD"/>
+                <constraint firstItem="Tdt-wC-2l6" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="Max-YM-Q7a"/>
+                <constraint firstItem="Tdt-wC-2l6" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="aBo-eZ-Fmh"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="jl0-9E-31j" secondAttribute="bottom" constant="5" id="adm-3A-EI9"/>
+                <constraint firstItem="jl0-9E-31j" firstAttribute="top" secondItem="Tdt-wC-2l6" secondAttribute="bottom" constant="5" id="oHg-kM-WDp"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="backgroundContent" destination="jl0-9E-31j" id="dHT-q6-Jkm"/>
+                <outlet property="iconImage" destination="Tdt-wC-2l6" id="cik-7T-zec"/>
+                <outlet property="keywordContent" destination="XVX-iD-9Og" id="k5g-Nt-jVz"/>
+            </connections>
+            <point key="canvasLocation" x="129.59999999999999" y="121.4392803598201"/>
+        </view>
+    </objects>
+</document>

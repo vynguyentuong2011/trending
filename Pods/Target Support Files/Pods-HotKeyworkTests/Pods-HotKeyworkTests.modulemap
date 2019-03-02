@@ -1,0 +1,6 @@
+framework module Pods_HotKeyworkTests {
+  umbrella header "Pods-HotKeyworkTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
