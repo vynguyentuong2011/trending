@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1F36873D273CDCB4D117CF0D /* Pods_HotKeyworkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88164AB957B1911A61D9B39A /* Pods_HotKeyworkTests.framework */; };
-		D363D1F1895EEA169EA91609 /* Pods_HotKeyworkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E7928FDAC944290488AAF1A /* Pods_HotKeyworkUITests.framework */; };
+		4AA8DD7D043C9B14BFC4E1B3 /* Pods_HotKeyworkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 935DE9C984B4BBAF1FCC7418 /* Pods_HotKeyworkTests.framework */; };
+		BAD4FD15394FFB0506F9E57A /* Pods_HotKeywork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E763F7F80495A54C56C69112 /* Pods_HotKeywork.framework */; };
+		D875FBFAE8E94D50476E6592 /* Pods_HotKeyworkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC563C2026740A5710CF8EA /* Pods_HotKeyworkUITests.framework */; };
 		E6016F5D222945AA0070461B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6016F5C222945AA0070461B /* AppDelegate.swift */; };
 		E6016F5F222945AA0070461B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6016F5E222945AA0070461B /* ViewController.swift */; };
 		E6016F62222945AA0070461B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6016F60222945AA0070461B /* Main.storyboard */; };
@@ -34,19 +35,10 @@
 		E6016FD0222A534C0070461B /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6016FCF222A534C0070461B /* APIClient.swift */; };
 		E6016FD2222A53BA0070461B /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6016FD1222A53BA0070461B /* Task.swift */; };
 		E6016FD4222A54FB0070461B /* HotKeywordAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6016FD3222A54FB0070461B /* HotKeywordAPIClient.swift */; };
-		E6F2D530222A67C900CEE898 /* Pods_HotKeywork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B9A09EA060E0F372EF1484E /* Pods_HotKeywork.framework */; };
-		E6F2D532222A67D500CEE898 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F2D531222A67D500CEE898 /* Alamofire.framework */; };
-		E6F2D534222A67DF00CEE898 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F2D533222A67DF00CEE898 /* AlamofireImage.framework */; };
-		E6F2D536222A67E500CEE898 /* AZDialogView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F2D535222A67E500CEE898 /* AZDialogView.framework */; };
-		E6F2D538222A67EB00CEE898 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F2D537222A67EB00CEE898 /* SwiftyJSON.framework */; };
-		E6F2D539222A67F600CEE898 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F2D537222A67EB00CEE898 /* SwiftyJSON.framework */; };
-		E6F2D53A222A67F600CEE898 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E6F2D537222A67EB00CEE898 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E6F2D53B222A67F600CEE898 /* AZDialogView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F2D535222A67E500CEE898 /* AZDialogView.framework */; };
-		E6F2D53C222A67F600CEE898 /* AZDialogView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E6F2D535222A67E500CEE898 /* AZDialogView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E6F2D53D222A67F600CEE898 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F2D533222A67DF00CEE898 /* AlamofireImage.framework */; };
-		E6F2D53E222A67F600CEE898 /* AlamofireImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E6F2D533222A67DF00CEE898 /* AlamofireImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E6F2D53F222A67F600CEE898 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F2D531222A67D500CEE898 /* Alamofire.framework */; };
-		E6F2D540222A67F600CEE898 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E6F2D531222A67D500CEE898 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E6910423222AA91D00927217 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6910422222AA91D00927217 /* Alamofire.framework */; };
+		E6910425222AAAE500927217 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6910424222AAAE500927217 /* AlamofireImage.framework */; };
+		E6910427222AAAE500927217 /* AZDialogView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6910426222AAAE500927217 /* AZDialogView.framework */; };
+		E6910429222AAAE500927217 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6910428222AAAE500927217 /* SwiftyJSON.framework */; };
 		E6F2D543222A75CC00CEE898 /* HotKeywordCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6F2D542222A75CC00CEE898 /* HotKeywordCell.xib */; };
 		E6F2D545222A785800CEE898 /* HotKeywordCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F2D544222A785800CEE898 /* HotKeywordCollectionViewCell.swift */; };
 		E6F2D547222A7E0200CEE898 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F2D546222A7E0200CEE898 /* Constant.swift */; };
@@ -70,32 +62,15 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		E6F2D541222A67F600CEE898 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				E6F2D53E222A67F600CEE898 /* AlamofireImage.framework in Embed Frameworks */,
-				E6F2D53C222A67F600CEE898 /* AZDialogView.framework in Embed Frameworks */,
-				E6F2D53A222A67F600CEE898 /* SwiftyJSON.framework in Embed Frameworks */,
-				E6F2D540222A67F600CEE898 /* Alamofire.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		1D09DA1DBDACC4513B9192F0 /* Pods-HotKeywork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotKeywork.debug.xcconfig"; path = "Target Support Files/Pods-HotKeywork/Pods-HotKeywork.debug.xcconfig"; sourceTree = "<group>"; };
-		3E7928FDAC944290488AAF1A /* Pods_HotKeyworkUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HotKeyworkUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5B9A09EA060E0F372EF1484E /* Pods_HotKeywork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HotKeywork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		867B9CBD8280D7E98B5D335F /* Pods-HotKeyworkUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotKeyworkUITests.debug.xcconfig"; path = "Target Support Files/Pods-HotKeyworkUITests/Pods-HotKeyworkUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		88164AB957B1911A61D9B39A /* Pods_HotKeyworkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HotKeyworkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D99B799E82EB45423B8377D /* Pods-HotKeyworkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotKeyworkTests.release.xcconfig"; path = "Target Support Files/Pods-HotKeyworkTests/Pods-HotKeyworkTests.release.xcconfig"; sourceTree = "<group>"; };
-		B934B0B6991E33C635DA9CB2 /* Pods-HotKeywork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotKeywork.release.xcconfig"; path = "Target Support Files/Pods-HotKeywork/Pods-HotKeywork.release.xcconfig"; sourceTree = "<group>"; };
-		D4AABD15C1A98062727AA1D0 /* Pods-HotKeyworkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotKeyworkUITests.release.xcconfig"; path = "Target Support Files/Pods-HotKeyworkUITests/Pods-HotKeyworkUITests.release.xcconfig"; sourceTree = "<group>"; };
+		024C6AC4E9A21199C36A0C62 /* Pods-HotKeywork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotKeywork.debug.xcconfig"; path = "Target Support Files/Pods-HotKeywork/Pods-HotKeywork.debug.xcconfig"; sourceTree = "<group>"; };
+		0E34AA22CD51E5478EF73A8D /* Pods-HotKeyworkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotKeyworkUITests.release.xcconfig"; path = "Target Support Files/Pods-HotKeyworkUITests/Pods-HotKeyworkUITests.release.xcconfig"; sourceTree = "<group>"; };
+		13065DCE23BA1BD80E2188E3 /* Pods-HotKeyworkUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotKeyworkUITests.debug.xcconfig"; path = "Target Support Files/Pods-HotKeyworkUITests/Pods-HotKeyworkUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		464E6777F843B7E2CE269214 /* Pods-HotKeyworkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotKeyworkTests.release.xcconfig"; path = "Target Support Files/Pods-HotKeyworkTests/Pods-HotKeyworkTests.release.xcconfig"; sourceTree = "<group>"; };
+		4DC563C2026740A5710CF8EA /* Pods_HotKeyworkUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HotKeyworkUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		56A7E46E8CAF4289A4B0FB48 /* Pods-HotKeywork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotKeywork.release.xcconfig"; path = "Target Support Files/Pods-HotKeywork/Pods-HotKeywork.release.xcconfig"; sourceTree = "<group>"; };
+		925C547933C1423ADD344386 /* Pods-HotKeyworkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotKeyworkTests.debug.xcconfig"; path = "Target Support Files/Pods-HotKeyworkTests/Pods-HotKeyworkTests.debug.xcconfig"; sourceTree = "<group>"; };
+		935DE9C984B4BBAF1FCC7418 /* Pods_HotKeyworkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HotKeyworkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6016F59222945AA0070461B /* HotKeywork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HotKeywork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6016F5C222945AA0070461B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E6016F5E222945AA0070461B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -133,6 +108,14 @@
 		E6016FD3222A54FB0070461B /* HotKeywordAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotKeywordAPIClient.swift; sourceTree = "<group>"; };
 		E6016FDB222A566E0070461B /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6016FDD222A568A0070461B /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../../Library/Developer/Xcode/DerivedData/HotKeywork-equpkjrdpikigjhefejquisirnaj/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
+		E6910411222AA7D300927217 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6910413222AA7D300927217 /* AlamofireImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AlamofireImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6910415222AA7D300927217 /* AZDialogView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AZDialogView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6910417222AA7D300927217 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6910422222AA91D00927217 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6910424222AAAE500927217 /* AlamofireImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AlamofireImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6910426222AAAE500927217 /* AZDialogView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AZDialogView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6910428222AAAE500927217 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6F2D4FD222A624800CEE898 /* AlamofireImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AlamofireImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6F2D4FF222A631900CEE898 /* AlamofireImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AlamofireImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6F2D503222A634300CEE898 /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = "../../../Library/Developer/Xcode/DerivedData/HotKeywork-equpkjrdpikigjhefejquisirnaj/Build/Products/Debug-iphonesimulator/AlamofireImage/AlamofireImage.framework"; sourceTree = "<group>"; };
@@ -154,7 +137,7 @@
 		E6F2D544222A785800CEE898 /* HotKeywordCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotKeywordCollectionViewCell.swift; sourceTree = "<group>"; };
 		E6F2D546222A7E0200CEE898 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		E6F2D548222A811C00CEE898 /* Array+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
-		ECAEF38306103D8B6A4F4146 /* Pods-HotKeyworkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotKeyworkTests.debug.xcconfig"; path = "Target Support Files/Pods-HotKeyworkTests/Pods-HotKeyworkTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E763F7F80495A54C56C69112 /* Pods_HotKeywork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HotKeywork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,15 +145,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6F2D53B222A67F600CEE898 /* AZDialogView.framework in Frameworks */,
-				E6F2D53F222A67F600CEE898 /* Alamofire.framework in Frameworks */,
-				E6F2D530222A67C900CEE898 /* Pods_HotKeywork.framework in Frameworks */,
-				E6F2D532222A67D500CEE898 /* Alamofire.framework in Frameworks */,
-				E6F2D539222A67F600CEE898 /* SwiftyJSON.framework in Frameworks */,
-				E6F2D536222A67E500CEE898 /* AZDialogView.framework in Frameworks */,
-				E6F2D538222A67EB00CEE898 /* SwiftyJSON.framework in Frameworks */,
-				E6F2D534222A67DF00CEE898 /* AlamofireImage.framework in Frameworks */,
-				E6F2D53D222A67F600CEE898 /* AlamofireImage.framework in Frameworks */,
+				E6910425222AAAE500927217 /* AlamofireImage.framework in Frameworks */,
+				E6910427222AAAE500927217 /* AZDialogView.framework in Frameworks */,
+				E6910429222AAAE500927217 /* SwiftyJSON.framework in Frameworks */,
+				E6910423222AA91D00927217 /* Alamofire.framework in Frameworks */,
+				BAD4FD15394FFB0506F9E57A /* Pods_HotKeywork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,7 +157,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F36873D273CDCB4D117CF0D /* Pods_HotKeyworkTests.framework in Frameworks */,
+				4AA8DD7D043C9B14BFC4E1B3 /* Pods_HotKeyworkTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,7 +165,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D363D1F1895EEA169EA91609 /* Pods_HotKeyworkUITests.framework in Frameworks */,
+				D875FBFAE8E94D50476E6592 /* Pods_HotKeyworkUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,12 +175,12 @@
 		9D76FC9B221BC0298AB4433D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1D09DA1DBDACC4513B9192F0 /* Pods-HotKeywork.debug.xcconfig */,
-				B934B0B6991E33C635DA9CB2 /* Pods-HotKeywork.release.xcconfig */,
-				ECAEF38306103D8B6A4F4146 /* Pods-HotKeyworkTests.debug.xcconfig */,
-				9D99B799E82EB45423B8377D /* Pods-HotKeyworkTests.release.xcconfig */,
-				867B9CBD8280D7E98B5D335F /* Pods-HotKeyworkUITests.debug.xcconfig */,
-				D4AABD15C1A98062727AA1D0 /* Pods-HotKeyworkUITests.release.xcconfig */,
+				024C6AC4E9A21199C36A0C62 /* Pods-HotKeywork.debug.xcconfig */,
+				56A7E46E8CAF4289A4B0FB48 /* Pods-HotKeywork.release.xcconfig */,
+				925C547933C1423ADD344386 /* Pods-HotKeyworkTests.debug.xcconfig */,
+				464E6777F843B7E2CE269214 /* Pods-HotKeyworkTests.release.xcconfig */,
+				13065DCE23BA1BD80E2188E3 /* Pods-HotKeyworkUITests.debug.xcconfig */,
+				0E34AA22CD51E5478EF73A8D /* Pods-HotKeyworkUITests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -412,6 +391,14 @@
 		FC0072A814D9D1D45A182246 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E6910424222AAAE500927217 /* AlamofireImage.framework */,
+				E6910426222AAAE500927217 /* AZDialogView.framework */,
+				E6910428222AAAE500927217 /* SwiftyJSON.framework */,
+				E6910422222AA91D00927217 /* Alamofire.framework */,
+				E6910411222AA7D300927217 /* Alamofire.framework */,
+				E6910413222AA7D300927217 /* AlamofireImage.framework */,
+				E6910415222AA7D300927217 /* AZDialogView.framework */,
+				E6910417222AA7D300927217 /* SwiftyJSON.framework */,
 				E6F2D537222A67EB00CEE898 /* SwiftyJSON.framework */,
 				E6F2D535222A67E500CEE898 /* AZDialogView.framework */,
 				E6F2D533222A67DF00CEE898 /* AlamofireImage.framework */,
@@ -435,9 +422,9 @@
 				E6016FA3222A3DCC0070461B /* Alamofire.framework */,
 				E6016FAE222A40CC0070461B /* Alamofire.framework */,
 				E6016FA5222A3DCC0070461B /* AZDialogView.framework */,
-				5B9A09EA060E0F372EF1484E /* Pods_HotKeywork.framework */,
-				88164AB957B1911A61D9B39A /* Pods_HotKeyworkTests.framework */,
-				3E7928FDAC944290488AAF1A /* Pods_HotKeyworkUITests.framework */,
+				E763F7F80495A54C56C69112 /* Pods_HotKeywork.framework */,
+				935DE9C984B4BBAF1FCC7418 /* Pods_HotKeyworkTests.framework */,
+				4DC563C2026740A5710CF8EA /* Pods_HotKeyworkUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -449,11 +436,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E6016F84222945AC0070461B /* Build configuration list for PBXNativeTarget "HotKeywork" */;
 			buildPhases = (
-				1711E751CF47BE94042608E5 /* [CP] Check Pods Manifest.lock */,
+				4A5BE3E021FF60D3549CA928 /* [CP] Check Pods Manifest.lock */,
 				E6016F55222945AA0070461B /* Sources */,
 				E6016F56222945AA0070461B /* Frameworks */,
 				E6016F57222945AA0070461B /* Resources */,
-				E6F2D541222A67F600CEE898 /* Embed Frameworks */,
+				D37A3320C452A92BA7B902E9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -468,11 +455,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E6016F87222945AC0070461B /* Build configuration list for PBXNativeTarget "HotKeyworkTests" */;
 			buildPhases = (
-				53B42B8ED8C689B9CE656E6C /* [CP] Check Pods Manifest.lock */,
+				CF8E832A40BC420D97F101CF /* [CP] Check Pods Manifest.lock */,
 				E6016F6C222945AC0070461B /* Sources */,
 				E6016F6D222945AC0070461B /* Frameworks */,
 				E6016F6E222945AC0070461B /* Resources */,
-				1A7B0A77E6C729ED686BF3A3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -488,7 +474,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E6016F8A222945AC0070461B /* Build configuration list for PBXNativeTarget "HotKeyworkUITests" */;
 			buildPhases = (
-				539CCAB26C2EF9BF6FA052E7 /* [CP] Check Pods Manifest.lock */,
+				E43017241DD19D48773AE7DC /* [CP] Check Pods Manifest.lock */,
 				E6016F77222945AC0070461B /* Sources */,
 				E6016F78222945AC0070461B /* Frameworks */,
 				E6016F79222945AC0070461B /* Resources */,
@@ -577,7 +563,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1711E751CF47BE94042608E5 /* [CP] Check Pods Manifest.lock */ = {
+		4A5BE3E021FF60D3549CA928 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -599,7 +585,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		1A7B0A77E6C729ED686BF3A3 /* [CP] Embed Pods Frameworks */ = {
+		CF8E832A40BC420D97F101CF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -607,7 +593,29 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-HotKeyworkTests/Pods-HotKeyworkTests-frameworks.sh",
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HotKeyworkTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D37A3320C452A92BA7B902E9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HotKeywork/Pods-HotKeywork-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AZDialogView/AZDialogView.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
@@ -624,10 +632,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HotKeyworkTests/Pods-HotKeyworkTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HotKeywork/Pods-HotKeywork-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		539CCAB26C2EF9BF6FA052E7 /* [CP] Check Pods Manifest.lock */ = {
+		E43017241DD19D48773AE7DC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -643,28 +651,6 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-HotKeyworkUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		53B42B8ED8C689B9CE656E6C /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-HotKeyworkTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -871,17 +857,12 @@
 		};
 		E6016F85222945AC0070461B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1D09DA1DBDACC4513B9192F0 /* Pods-HotKeywork.debug.xcconfig */;
+			baseConfigurationReference = 024C6AC4E9A21199C36A0C62 /* Pods-HotKeywork.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UVX24FNGNF;
-				"FRAMEWORK_SEARCH_PATHS[arch=*]" = (
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/AZDialogView\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftyJSON\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/AlamofireImage\"",
-				);
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "\"${PODS_CONFIGURATION_BUILD_DIR}/AZDialogView\" \"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire\" \"${PODS_CONFIGURATION_BUILD_DIR}/SwiftyJSON\" \"${PODS_CONFIGURATION_BUILD_DIR}/AlamofireImage\"";
 				INFOPLIST_FILE = HotKeywork/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -897,7 +878,7 @@
 		};
 		E6016F86222945AC0070461B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B934B0B6991E33C635DA9CB2 /* Pods-HotKeywork.release.xcconfig */;
+			baseConfigurationReference = 56A7E46E8CAF4289A4B0FB48 /* Pods-HotKeywork.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -925,7 +906,7 @@
 		};
 		E6016F88222945AC0070461B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ECAEF38306103D8B6A4F4146 /* Pods-HotKeyworkTests.debug.xcconfig */;
+			baseConfigurationReference = 925C547933C1423ADD344386 /* Pods-HotKeyworkTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -947,7 +928,7 @@
 		};
 		E6016F89222945AC0070461B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9D99B799E82EB45423B8377D /* Pods-HotKeyworkTests.release.xcconfig */;
+			baseConfigurationReference = 464E6777F843B7E2CE269214 /* Pods-HotKeyworkTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -969,7 +950,7 @@
 		};
 		E6016F8B222945AC0070461B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 867B9CBD8280D7E98B5D335F /* Pods-HotKeyworkUITests.debug.xcconfig */;
+			baseConfigurationReference = 13065DCE23BA1BD80E2188E3 /* Pods-HotKeyworkUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -990,7 +971,7 @@
 		};
 		E6016F8C222945AC0070461B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D4AABD15C1A98062727AA1D0 /* Pods-HotKeyworkUITests.release.xcconfig */;
+			baseConfigurationReference = 0E34AA22CD51E5478EF73A8D /* Pods-HotKeyworkUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
