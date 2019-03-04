@@ -19,10 +19,9 @@ class TrendingViewController: UIViewController {
     let kMinWidthItem = 112
     let kWidthSizePerImage = 96
     let kHeightSizePerImage = 96
-    let kHeightSizePerSingleContentBox = 40
     let kHeightSizePerDoubleContentBox = 60
     let kPadding = 16
-    let kEmptyString = ""
+    let kEmptyString = " "
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -94,7 +93,7 @@ extension TrendingViewController: UICollectionViewDelegateFlowLayout {
         if let keyword = self.hotKeyWordResults?[indexPath.row] {
             if keyword.content.range(of: kEmptyString) == nil {
                 let widthItem = kMinWidthItem
-                let heightItem = kHeightSizePerImage + kHeightSizePerSingleContentBox
+                let heightItem = kHeightSizePerImage + kHeightSizePerDoubleContentBox
                 return CGSize(width: widthItem, height: heightItem)
             } else {
                 let heightItem = kHeightSizePerImage + kHeightSizePerDoubleContentBox
