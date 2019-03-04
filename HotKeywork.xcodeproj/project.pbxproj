@@ -26,7 +26,6 @@
 		E6016FA0222A37540070461B /* WelcomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6016F9F222A37530070461B /* WelcomeRouter.swift */; };
 		E6016FA2222A3D230070461B /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6016FA1222A3D230070461B /* UIViewController+Extension.swift */; };
 		E6016FBE222A43380070461B /* Trending.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6016FBD222A43380070461B /* Trending.storyboard */; };
-		E6016FC0222A4B490070461B /* TrendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6016FBF222A4B490070461B /* TrendingViewController.swift */; };
 		E6016FC2222A4B630070461B /* TrendingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6016FC1222A4B630070461B /* TrendingProtocol.swift */; };
 		E6016FC4222A4B960070461B /* TrendingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6016FC3222A4B960070461B /* TrendingInteractor.swift */; };
 		E6016FC6222A4BC90070461B /* TrendingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6016FC5222A4BC90070461B /* TrendingPresenter.swift */; };
@@ -35,10 +34,12 @@
 		E6016FD0222A534C0070461B /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6016FCF222A534C0070461B /* APIClient.swift */; };
 		E6016FD2222A53BA0070461B /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6016FD1222A53BA0070461B /* Task.swift */; };
 		E6016FD4222A54FB0070461B /* HotKeywordAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6016FD3222A54FB0070461B /* HotKeywordAPIClient.swift */; };
+		E63572E2222D6E1200B990E9 /* CustomLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63572E1222D6E1200B990E9 /* CustomLayout.swift */; };
 		E6910423222AA91D00927217 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6910422222AA91D00927217 /* Alamofire.framework */; };
 		E6910425222AAAE500927217 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6910424222AAAE500927217 /* AlamofireImage.framework */; };
 		E6910427222AAAE500927217 /* AZDialogView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6910426222AAAE500927217 /* AZDialogView.framework */; };
 		E6910429222AAAE500927217 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6910428222AAAE500927217 /* SwiftyJSON.framework */; };
+		E6910443222D58FA00927217 /* TrendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6910442222D58FA00927217 /* TrendingViewController.swift */; };
 		E6F2D543222A75CC00CEE898 /* HotKeywordCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6F2D542222A75CC00CEE898 /* HotKeywordCell.xib */; };
 		E6F2D545222A785800CEE898 /* HotKeywordCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F2D544222A785800CEE898 /* HotKeywordCollectionViewCell.swift */; };
 		E6F2D547222A7E0200CEE898 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F2D546222A7E0200CEE898 /* Constant.swift */; };
@@ -97,7 +98,6 @@
 		E6016FAE222A40CC0070461B /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../Library/Developer/Xcode/DerivedData/HotKeywork-equpkjrdpikigjhefejquisirnaj/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
 		E6016FB0222A40D90070461B /* AZDialogView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AZDialogView.framework; path = "../../../Library/Developer/Xcode/DerivedData/HotKeywork-equpkjrdpikigjhefejquisirnaj/Build/Products/Debug-iphonesimulator/AZDialogView/AZDialogView.framework"; sourceTree = "<group>"; };
 		E6016FBD222A43380070461B /* Trending.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Trending.storyboard; sourceTree = "<group>"; };
-		E6016FBF222A4B490070461B /* TrendingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingViewController.swift; sourceTree = "<group>"; };
 		E6016FC1222A4B630070461B /* TrendingProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingProtocol.swift; sourceTree = "<group>"; };
 		E6016FC3222A4B960070461B /* TrendingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingInteractor.swift; sourceTree = "<group>"; };
 		E6016FC5222A4BC90070461B /* TrendingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingPresenter.swift; sourceTree = "<group>"; };
@@ -108,6 +108,7 @@
 		E6016FD3222A54FB0070461B /* HotKeywordAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotKeywordAPIClient.swift; sourceTree = "<group>"; };
 		E6016FDB222A566E0070461B /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6016FDD222A568A0070461B /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../../Library/Developer/Xcode/DerivedData/HotKeywork-equpkjrdpikigjhefejquisirnaj/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
+		E63572E1222D6E1200B990E9 /* CustomLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLayout.swift; sourceTree = "<group>"; };
 		E6910411222AA7D300927217 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6910413222AA7D300927217 /* AlamofireImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AlamofireImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6910415222AA7D300927217 /* AZDialogView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AZDialogView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,6 +117,7 @@
 		E6910424222AAAE500927217 /* AlamofireImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AlamofireImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6910426222AAAE500927217 /* AZDialogView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AZDialogView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6910428222AAAE500927217 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6910442222D58FA00927217 /* TrendingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingViewController.swift; sourceTree = "<group>"; };
 		E6F2D4FD222A624800CEE898 /* AlamofireImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AlamofireImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6F2D4FF222A631900CEE898 /* AlamofireImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AlamofireImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6F2D503222A634300CEE898 /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = "../../../Library/Developer/Xcode/DerivedData/HotKeywork-equpkjrdpikigjhefejquisirnaj/Build/Products/Debug-iphonesimulator/AlamofireImage/AlamofireImage.framework"; sourceTree = "<group>"; };
@@ -256,7 +258,6 @@
 			children = (
 				E6016F94222A1EBC0070461B /* Protocol */,
 				E6016F93222A1EB70070461B /* Router */,
-				E6016F92222A1EAE0070461B /* Entity */,
 				E6016F91222A1EA70070461B /* Presenter */,
 				E6016F90222A1EA10070461B /* Interactor */,
 				E6016F8F222A1E290070461B /* View */,
@@ -287,13 +288,6 @@
 				E6016F9D222A37210070461B /* WelcomePresenter.swift */,
 			);
 			path = Presenter;
-			sourceTree = "<group>";
-		};
-		E6016F92222A1EAE0070461B /* Entity */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Entity;
 			sourceTree = "<group>";
 		};
 		E6016F93222A1EB70070461B /* Router */ = {
@@ -330,9 +324,10 @@
 			isa = PBXGroup;
 			children = (
 				E6016FBD222A43380070461B /* Trending.storyboard */,
-				E6016FBF222A4B490070461B /* TrendingViewController.swift */,
 				E6F2D542222A75CC00CEE898 /* HotKeywordCell.xib */,
 				E6F2D544222A785800CEE898 /* HotKeywordCollectionViewCell.swift */,
+				E6910442222D58FA00927217 /* TrendingViewController.swift */,
+				E63572E1222D6E1200B990E9 /* CustomLayout.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -668,6 +663,7 @@
 				E6016FD0222A534C0070461B /* APIClient.swift in Sources */,
 				E6016FCA222A4F2C0070461B /* Keyword.swift in Sources */,
 				E6016F65222945AA0070461B /* HotKeywork.xcdatamodeld in Sources */,
+				E63572E2222D6E1200B990E9 /* CustomLayout.swift in Sources */,
 				E6016FA0222A37540070461B /* WelcomeRouter.swift in Sources */,
 				E6016FD4222A54FB0070461B /* HotKeywordAPIClient.swift in Sources */,
 				E6016F98222A2F6D0070461B /* WelcomeViewController.swift in Sources */,
@@ -676,10 +672,10 @@
 				E6F2D545222A785800CEE898 /* HotKeywordCollectionViewCell.swift in Sources */,
 				E6016FC6222A4BC90070461B /* TrendingPresenter.swift in Sources */,
 				E6016FC4222A4B960070461B /* TrendingInteractor.swift in Sources */,
+				E6910443222D58FA00927217 /* TrendingViewController.swift in Sources */,
 				E6016FC8222A4BE00070461B /* TrendingRouter.swift in Sources */,
 				E6016F9A222A2FC80070461B /* WelcomeProtocol.swift in Sources */,
 				E6016F9C222A36F10070461B /* WelcomeInteractor.swift in Sources */,
-				E6016FC0222A4B490070461B /* TrendingViewController.swift in Sources */,
 				E6016FC2222A4B630070461B /* TrendingProtocol.swift in Sources */,
 				E6016F5F222945AA0070461B /* ViewController.swift in Sources */,
 				E6F2D549222A811C00CEE898 /* Array+Extension.swift in Sources */,
@@ -862,7 +858,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UVX24FNGNF;
-				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "\"${PODS_CONFIGURATION_BUILD_DIR}/AZDialogView\" \"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire\" \"${PODS_CONFIGURATION_BUILD_DIR}/SwiftyJSON\" \"${PODS_CONFIGURATION_BUILD_DIR}/AlamofireImage\"";
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = (
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/AZDialogView\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftyJSON\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/AlamofireImage\"",
+				);
 				INFOPLIST_FILE = HotKeywork/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (

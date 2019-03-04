@@ -14,6 +14,9 @@ class HotKeywordCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var backgroundContent: UIView!
     @IBOutlet weak var keywordContent: UILabel!
     
+    override func layoutSubviews() {
+        keywordContent.font.withSize(14)
+    }
     func fillData(item: Keyword, backgroundColor: UIColor) {
         self.iconImage.image = item.image
         self.keywordContent.text = item.content

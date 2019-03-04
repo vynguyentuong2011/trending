@@ -2,7 +2,7 @@
 //  TrendingViewController.swift
 //  HotKeywork
 //
-//  Created by Ms Vi Nguyen Tuong Vi on 3/2/19.
+//  Created by Ms Vi Nguyen Tuong Vi on 3/4/19.
 //  Copyright © 2019 Ms Vi Nguyen Tuong Vi. All rights reserved.
 //
 
@@ -11,16 +11,18 @@ import UIKit
 class TrendingViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
+    
+    @IBOutlet weak var scrollView: UIScrollView!
     var presenter: TrendingPresenterProtocol?
     var hotKeyWordResults : [Keyword]?
     var backgroundColors: [UIColor]?
-    
-    var layout: UICollectionViewFlowLayout = {
-        let layout = UICollectionViewFlowLayout()
-        let width = UIScreen.main.bounds.size.width
-        layout.estimatedItemSize = CGSize(width: 112, height: 150)
-        return layout
-    }()
+    let kMinWidthItem = 112
+    let kWidthSizePerImage = 96
+    let kHeightSizePerImage = 96
+    let kHeightSizePerSingleContentBox = 40
+    let kHeightSizePerDoubleContentBox = 60
+    let kPadding = 16
+    let kEmptyString = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,57 +32,39 @@ class TrendingViewController: UIViewController {
             self.setUpUI()
         }
     }
+
+    @IBAction func dismissBtnTouchDown(_ sender: Any) {
+         self.presenter?.dismiss()
+    }
     
     func setUpUI() {
-        self.collectionView.delegate = self
-        self.collectionView.dataSource = self
-        self.collectionView.collectionViewLayout = layout
-        self.collectionView.register(UINib(nibName: "HotKeywordCell", bundle: nil), forCellWithReuseIdentifier: "HotKeywordCollectionViewCell")
+        collectionView.register(UINib(nibName: "HotKeywordCell", bundle: nil), forCellWithReuseIdentifier: "HotKeywordCollectionViewCell")
+        collectionView?.backgroundColor = UIColor.clear
+        collectionView?.contentInset = UIEdgeInsets(top: 23, left: 10, bottom: 10, right: 10)
+        
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        let layout = LeftAlignedCollectionViewFlowLayout()
+        collectionView.collectionViewLayout = layout
+        self.scrollView.isDirectionalLockEnabled = false
     }
-
+    
     func reloadData() {
         self.dispatchToMainQueue {
             self.collectionView.reloadData()
         }
     }
-    
-    @IBAction func dismissBtnTouchDown(_ sender: Any) {
-        self.presenter?.dismiss()
-    }
-    
 }
 
-extension TrendingViewController: UICollectionViewDelegateFlowLayout {
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 8
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8)
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        if let item = self.hotKeyWordResults?[indexPath.row] {
-            if (item.content.range(of: " ") != nil) {
-                return CGSize(width: 112, height: 180)
-            } else {
-                return CGSize(width: 112, height: 150)
-            }
-        }
-        
-        return CGSize(width: 0, height: 0)
-    }
-}
+extension TrendingViewController: UICollectionViewDataSource, UICollectionViewDelegate {
 
-extension TrendingViewController: UICollectionViewDataSource {
-    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if let results = self.hotKeyWordResults {
             return results.count
         }
         return 0
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HotKeywordCollectionViewCell", for: indexPath) as! HotKeywordCollectionViewCell
         if let keyword = self.hotKeyWordResults?[indexPath.row],
@@ -101,6 +85,25 @@ extension TrendingViewController: TrendingViewProtocol {
     func didRetrivedHotKeywords(_ result: [Keyword]) {
         self.hotKeyWordResults = result
         self.reloadData()
+    }
+    
+}
+
+extension TrendingViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        if let keyword = self.hotKeyWordResults?[indexPath.row] {
+            if keyword.content.range(of: kEmptyString) == nil {
+                let widthItem = kMinWidthItem
+                let heightItem = kHeightSizePerImage + kHeightSizePerSingleContentBox
+                return CGSize(width: widthItem, height: heightItem)
+            } else {
+                let heightItem = kHeightSizePerImage + kHeightSizePerDoubleContentBox
+                let widthContent = self.hotKeyWordResults?[indexPath.row].content.size(withAttributes: nil).width
+                let widthItem = max(kMinWidthItem, Int(widthContent! + CGFloat(kPadding * 2)))
+                return CGSize(width: Int(widthItem), height: heightItem)
+            }
+        }
+        return CGSize(width: 0, height: 0)
     }
     
 }

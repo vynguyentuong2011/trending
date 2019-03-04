@@ -11,7 +11,7 @@ import UIKit
 
 class TrendingPresenter: TrendingPresenterProtocol {
 
-    var view: TrendingViewProtocol?
+    weak var view: TrendingViewProtocol?
     var interactor: TrendingInteractorProtocol?
     var router: TrendingRouterProtocol?
     

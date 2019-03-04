@@ -10,7 +10,7 @@ import Foundation
 
 class WelcomePresenter: WelcomePresenterProtocol {
     
-    var view: WelcomeViewProtocol?
+    weak var view: WelcomeViewProtocol?
     var interactor: WelcomeInteractorProtocol?
     var router: WelcomeRouterProtocol?
     
